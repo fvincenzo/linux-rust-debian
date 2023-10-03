@@ -1,0 +1,13 @@
+# Docker composer file for Linux Rust (Debian Based)
+version: '3.8'
+services:
+  linux-rust:
+    image: "ghcr.io/fvincenzo/linux-rust-debian:latest"
+    container_name: "linux-rust-debian"
+    volumes:
+      - ./workspace:/workspace
+      - ~/.ssh:/root/.ssh
+      - ~/.gnupg:/root/.gnupg
+      - ~/.gitconfig:/root/.gitconfig
+    tty: true
+    restart: unless-stopped
