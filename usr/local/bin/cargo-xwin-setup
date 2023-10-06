@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Add i686-pc-windows-msvc target
+rustup target add i686-pc-windows-msvc
+
+# Install xwin
+cargo install cargo-xwin

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Build for i686-pc-windows-msvc target
+cargo xwin build --release --xwin-arch x86
